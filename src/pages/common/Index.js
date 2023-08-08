@@ -39,6 +39,11 @@ export default class Index extends Component{
         url: '/pages/nanny/index'
 
       })
+    }else if(current === 6){
+      Taro.reLaunch({
+        url: '/pages/moveInstall/index'
+
+      })
     }
 
   }
@@ -55,6 +60,7 @@ export default class Index extends Component{
             { title: '预约日历', image: `http://43.139.94.243/icon/sort.png`,selectedImage:`http://43.139.94.243/icon/sort0.png`},
             { title: '我的', image: `http://43.139.94.243/icon/sort.png`,selectedImage:`http://43.139.94.243/icon/sort0.png`},
             { title: '保姆月嫂', image: `http://43.139.94.243/icon/sort.png`,selectedImage:`http://43.139.94.243/icon/sort0.png`},
+            { title: '搬家安装', image: `http://43.139.94.243/icon/sort.png`,selectedImage:`http://43.139.94.243/icon/sort0.png`},
           ]}
           onClick={this.handleClick.bind(this)}
           current={this.props.current}

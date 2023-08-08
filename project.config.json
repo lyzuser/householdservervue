@@ -1,8 +1,6 @@
 {
   "miniprogramRoot": "dist/",
-  "projectname": "householdserver",
   "description": "家政服务小程序",
-  "appid": "wxe10814cbc38965f2",
   "setting": {
     "urlCheck": true,
     "es6": false,
@@ -15,18 +13,22 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "coverView": false,
+    "showShadowRootInWxmlPanel": false,
+    "packNpmRelationList": []
   },
   "compileType": "miniprogram",
-  "libVersion": "3.0.0",
   "srcMiniprogramRoot": "dist/",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "libVersion": "3.0.0",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "appid": "wxe21ce26c9b738710"
 }
