@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <View className='index'>
       <Text>这是预约日历</Text>
-      <TabBar current={2}></TabBar>
+      <TabBar current={3}></TabBar>
     </View>
   )
 }
