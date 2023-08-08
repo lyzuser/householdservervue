@@ -1,14 +1,28 @@
-.tabsPane{
-  display: flex;
-flex-wrap:wrap;
-  align-content: flex-start;
-}
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/calendar.scss";
+.scrollview {
+  height: 1000px;
+  width: 100%;
+  background-color: #F1F1F1;
 
-.paneContent{
-  text-align: center;
-  margin-right: 55px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid grey;
-  border-right: 1px solid grey;
-  font-size:30px;
+}
+.reservation {
+  display: flex;
+  width: 90%;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 2%;
+  margin-left: 2.5%;
+  margin-top: 4%;
+  align-items: center;
+}
+.reservationTime {
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+}
+.timeText {
+  color: #A69999;
 }
