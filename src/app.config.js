@@ -5,6 +5,7 @@ export default defineAppConfig({
     'pages/me/index',
     'pages/notice/index',
     'pages/booking/index',
+    'pages/nanny/index',
   ],
   window: {
     backgroundTextStyle: 'light',
