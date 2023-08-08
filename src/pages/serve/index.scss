@@ -1,0 +1,14 @@
+.tabsPane{
+  display: flex;
+flex-wrap:wrap;
+  align-content: flex-start;
+}
+
+.paneContent{
+  text-align: center;
+  margin-right: 55px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  font-size:30px;
+}
