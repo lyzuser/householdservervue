@@ -25,6 +25,8 @@ export default class Index extends Component{
         {id:12, src:"https://ns-strategy.cdn.bcebos.com/ns-strategy/upload/fc_big_pic/part-00091-1223.jpg", text:"防水补漏预约"},
       ]
 
+
+
     }
   }
   onScrollToUpper() {}
@@ -76,5 +78,6 @@ export default class Index extends Component{
 
     )
   }
+
 }
 
