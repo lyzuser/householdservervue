@@ -6,9 +6,15 @@ export default defineAppConfig({
     'pages/notice/index',
     'pages/booking/index',
     'pages/nanny/index',
+    'pages/bookinginfo/index',
     'pages/moveInstall/index',
     'pages/appointmentDetails/index',
+
     'pages/textDetails/index',
+
+    'pages/cleaning/index',
+    'pages/homerepair/index',
+
   ],
   window: {
     backgroundTextStyle: 'light',

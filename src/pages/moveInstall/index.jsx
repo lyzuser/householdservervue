@@ -14,7 +14,7 @@ export default class Index extends Component  {
     }
   toAppointmentDetails(){
     Taro.reLaunch({
-      url: '/pages/appointmentDetails/index',
+      url: '/pages/bookinginfo/index',
     })
   }
     onScrollToUpper() {}
@@ -74,7 +74,7 @@ export default class Index extends Component  {
 
           </View>
         </ScrollView>
-        <TabBar current={6}></TabBar>
+        <TabBar current={0}></TabBar>
       </View>
     )
   }
