@@ -27,6 +27,22 @@ export default class Index extends Component {
       Taro.reLaunch({
         url: '/pages/moveInstall/index'
       })
+    }else if(item.index==2){
+      Taro.reLaunch({
+        url: '/pages/cleaning/index'
+      })
+    }else if(item.index==4){
+      Taro.reLaunch({
+        url: '/pages/homerepair/index'
+      })
+    }else if(item.index==1){
+      Taro.reLaunch({
+        url: '/pages/serve/index'
+      })
+    }else if(item.index==0){
+      Taro.reLaunch({
+        url: '/pages/notice/index'
+      })
     }
 
   }
@@ -67,6 +83,7 @@ render(){
             value: '保姆月嫂'
           },
           {
+            index:4,
             image: 'http://43.139.94.243/icon/sort.png',
             value: '家庭维修'
           },
