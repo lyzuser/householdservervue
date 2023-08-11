@@ -1,4 +1,6 @@
-
+.title{
+  font-weight: bold;
+}
 .box{
   font-weight: bold;
   font-size: 35px;
@@ -10,4 +12,20 @@
   height: 40%;
   margin-left: 50px;
   margin-right: 50px;
+}
+
+.time-tag{
+  margin: 50px;
+}
+
+.Button{
+  background-color: rgb(240,240,240);
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 30px;
+  width: 300px;
+  height: 100px;
+  border: 2px solid rgb(220,220,220);
+  margin-left: 100px;
+  color: rgba(1,1,1,0.6);
 }

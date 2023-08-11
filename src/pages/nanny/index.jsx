@@ -1,7 +1,7 @@
 import {View, Text, ScrollView, SwiperItem, Swiper} from '@tarojs/components'
 import Taro, { useLoad } from '@tarojs/taro'
 import './index.scss'
-import TabBar from '../common/Index'
+
 import {Component} from "react";
 import { AtIcon } from 'taro-ui'
 
@@ -82,7 +82,7 @@ export default class Index extends Component  {
             </View>
           </View>
         </ScrollView>
-        <TabBar current={2}></TabBar>
+
       </View>
 
     )
