@@ -8,6 +8,7 @@ export default defineAppConfig({
     'pages/nanny/index',
     'pages/moveInstall/index',
     'pages/appointmentDetails/index',
+    'pages/textDetails/index',
   ],
   window: {
     backgroundTextStyle: 'light',
