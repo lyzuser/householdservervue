@@ -33,9 +33,9 @@ export default class Index extends Component {
 
   render() {
     return (
-      <View className='homeInstall'>
-        <View className='at-article__h1'>
-          家具安装服务
+      <View className='big-box'>
+        <View className='title'>
+          催乳师预约
         </View>
         <AtTabs
           animated={false}
@@ -45,7 +45,7 @@ export default class Index extends Component {
             { title: '可预约时段' },
           ]}
           onClick={this.handleClick.bind(this)}>
-          <AtTabsPane className='' current={this.state.current} index={0} >
+          <AtTabsPane current={this.state.current} index={0} >
             <View className='box'>
               催乳师，俗称是催奶师或者是揉奶师、是指运用人体经络穴位、中医按摩推拿手法、
               心理梳理跟营养调理等等相关知识，解决产妇产后少乳、无乳、乳房胀痛、乳汁淤积
@@ -61,129 +61,39 @@ export default class Index extends Component {
           </AtTabsPane>
           <AtTabsPane current={this.state.current} index={1}>
             <AtTabs
+              className='attabs'
               current={this.state.current2}
               scroll
-              height='200px'
+              height='100%'
               tabDirection='vertical'
               tabList={[
-                { title: '标签页1' },
-                { title: '标签页2' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },{ title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },
-                { title: '标签页3' },{ title: '标签页3' },
-
-
-
-
-
-
+                { title: '2023-08-09' },
+                { title: '2023-08-10' },
+                { title: '2023-08-11' },
 
               ]}
               onClick={this.handleClick2.bind(this)}>
               <AtTabsPane scroll tabDirection='vertical' current={this.state.current2} index={0}>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard><AtCard
-                title='2023年8月20日（周日）'
-              >
-                <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-              </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard><AtCard
-                title='2023年8月20日（周日）'
-              >
-                <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-              </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-                <AtCard
-                  title='2023年8月20日（周日）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-
-
-
-              </AtTabsPane>
-              <AtTabsPane tabDirection='vertical' current={this.state.current2} index={1}>
-                <AtCard
-                  title='2023年8月21日（周一）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
-              </AtTabsPane>
-              <AtTabsPane tabDirection='vertical' current={this.state.current2} index={2}>
-                <AtCard
-                  title='2023年8月22日（周二）'
-                >
-                  <AtButton onClick={this.handleClick3.bind(this)}>09:00~21:30</AtButton>
-                </AtCard>
+                <View className='time-tag'>
+                      <AtButton onClick={this.handleClick3.bind(this)}
+                                type='primary'
+                                className='Button'
+                      >
+                        09:00~21:30<Text>{this.state.br}(0/50)</Text>
+                      </AtButton>
+                  <AtButton onClick={this.handleClick3.bind(this)}
+                            type='primary'
+                            className='Button'
+                  >
+                    09:00~21:30<Text>{this.state.br}(0/50)</Text>
+                  </AtButton>
+                  <AtButton onClick={this.handleClick3.bind(this)}
+                            type='primary'
+                            className='Button'
+                  >
+                    09:00~21:30<Text>{this.state.br}(0/50)</Text>
+                  </AtButton>
+                </View>
               </AtTabsPane>
             </AtTabs>
           </AtTabsPane>
