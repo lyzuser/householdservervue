@@ -9,8 +9,12 @@ export default defineAppConfig({
     'pages/bookinginfo/index',
     'pages/moveInstall/index',
     'pages/appointmentDetails/index',
+
+    'pages/textDetails/index',
+
     'pages/cleaning/index',
     'pages/homerepair/index',
+
   ],
   window: {
     backgroundTextStyle: 'light',
