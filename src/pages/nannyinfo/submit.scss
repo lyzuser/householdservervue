@@ -1,0 +1,55 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/tag.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+
+.submit {
+  width: 100%;
+  height: 1100px;
+  background-color: #F3F3F3;
+}
+.firstText {
+  display: block;
+  margin-left: 3%;
+  padding-top: 3%;
+
+}
+.Text {
+  display: flex;
+  padding-left: 2%;
+  width: 95%;
+  height: 100px;
+  background-color: white;
+  align-items: center;
+  border-bottom: 1px solid #F3F3F3;
+}
+.Time {
+  display: flex;
+  padding-left: 2%;
+  width: 95%;
+  height: 100px;
+  background-color: white;
+  align-items: center;
+}
+
+.secondText{
+  display: block;
+  margin-left: 3%;
+  padding-top: 3%;
+}
+.informationText {
+  display: flex;
+  width: 92%;
+  height: 100px;
+  padding-left: 5%;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+}
+.input {
+  display: flex;
+  width: 92%;
+  height: 100px;
+  background-color: white;
+  padding-left: 5%;
+  align-items: center;
+}

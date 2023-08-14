@@ -1,5 +1,5 @@
 import {View, Text, SwiperItem, Swiper, ScrollView} from '@tarojs/components'
-import { useLoad } from '@tarojs/taro'
+import Taro, { useLoad } from '@tarojs/taro'
 import './index.scss'
 import TabBar from '../common/Index'
 import { AtCalendar, AtAvatar, AtIcon} from "taro-ui"
@@ -37,6 +37,11 @@ export default class Index extends Component{
   onScroll(e){
     console.log(e.detail)
   }
+  clickReservation(){
+    Taro.reLaunch({
+      url: '/pages/nannyinfo/index',
+    })
+}
 
   render() {
     const scrollTop = 0
@@ -60,7 +65,7 @@ export default class Index extends Component{
           {
             this.state.reservationList.map((reservation) => {
               return (
-                <View className='reservation'>
+                <View className='reservation' onClick={this.clickReservation}>
                   <AtAvatar size='small' circle image={reservation.src}></AtAvatar>
                   <Text style="padding-left: 2%;">{reservation.text}</Text>
                   <View className='reservationTime'>

@@ -1,9 +1,9 @@
 import { View, Text ,Image} from '@tarojs/components'
-import Taro, { useLoad } from '@tarojs/taro'
 import './index.scss'
 import TabBar from "../common/index";
 import {AtButton, AtCard, AtTabs, AtTabsPane} from "taro-ui";
 import {Component} from "react";
+import Taro from "@tarojs/taro";
 
 export default class Index extends Component {
 
@@ -26,9 +26,9 @@ export default class Index extends Component {
     })
   }
   handleClick3 (value) {
-    //   Taro.reLaunch({
-    //     url: '/pages/installDetail/index',
-    // })
+      Taro.reLaunch({
+        url: '/pages/nannyinfo/submit',
+    })
   }
 
   render() {

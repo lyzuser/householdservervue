@@ -7,6 +7,7 @@ export default defineAppConfig({
     'pages/booking/index',
     'pages/nanny/index',
     'pages/nannyinfo/index',
+    'pages/nannyinfo/submit',
     'pages/moveInstall/index',
     'pages/appointmentDetails/index',
   ],
